@@ -1,0 +1,136 @@
+{
+  "events_data": [
+    {
+      "id": "wedding_full_planning",
+      "cover_photo": "https://i.ibb.co/nDNQWy7/wedding-planning-cover.jpg",
+      "title": "Full Wedding Planning",
+      "short_description": "Comprehensive wedding planning services from start to finish.",
+      "long_description": "Our Full Wedding Planning package offers a stress-free and seamless wedding planning experience. We handle every aspect of your wedding, from the initial concept to the final farewell. Our team of experienced professionals will work closely with you to bring your dream wedding to life.",
+      "services_list": [
+        "Venue selection and booking",
+        "Budget management and tracking",
+        "Vendor selection and coordination",
+        "Event design and theme creation",
+        "Wedding day timeline planning",
+        "Guest list management",
+        "RSVP coordination",
+        "Menu selection and catering arrangements",
+        "Decor and floral design",
+        "Transportation logistics",
+        "Entertainment planning",
+        "Photography and videography coordination",
+        "Wedding attire consultation",
+        "Guest accommodations",
+        "Wedding favors and gift planning",
+        "Wedding rehearsal coordination",
+        "On-site wedding day coordination",
+        "Post-wedding cleanup and logistics"
+      ],
+      "price": "$10,000 - $25,000"
+    },
+    {
+      "id": "wedding_photography",
+      "cover_photo": "https://i.ibb.co/WPjjKgq/wedding-photography-cover.jpg",
+      "title": "Wedding Photography",
+      "short_description": "Capture the magic of your wedding day with professional photography.",
+      "long_description": "Our Wedding Photography services are designed to capture every special moment of your big day. Our team of experienced photographers will work tirelessly to ensure that your wedding memories are preserved beautifully. From candid shots to posed portraits, we'll create a stunning visual record of your wedding that you'll treasure forever.",
+      "services_list": [
+        "Pre-wedding consultation to understand your vision",
+        "Full-day coverage, from getting ready to the reception",
+        "Unlimited high-resolution photos",
+        "Professional editing and retouching",
+        "Online gallery for easy sharing and downloading",
+        "Print and album options available",
+        "Second photographer option for comprehensive coverage",
+        "Customized photography timeline",
+        "Engagement or pre-wedding photo session"
+      ],
+      "price": "$2,000 - $4,500"
+    },
+    {
+      "id": "wedding_decor_and_design",
+      "cover_photo": "https://i.ibb.co/pLdBVH5/wedding-decor-cover.jpg",
+      "title": "Wedding Decor and Design",
+      "short_description": "Transform your wedding venue with stunning decor and exquisite design.",
+      "long_description": "Our Wedding Decor and Design service is all about creating a visually stunning and cohesive atmosphere for your wedding. We work closely with you to understand your style and preferences, and then we design and decorate your venue to bring your wedding vision to life.",
+      "services_list": [
+        "Venue assessment and design consultation",
+        "Theme and color palette development",
+        "Tablescapes and centerpieces design",
+        "Floral arrangements and bouquet design",
+        "Lighting design and ambiance creation",
+        "Custom signage and stationery design",
+        "Chair covers and sashes",
+        "Linens and tableware selection",
+        "Ceremony arch and backdrop design",
+        "Draping and ceiling treatments",
+        "Props and decor rentals",
+        "Setup and teardown of decor elements",
+        "On-site decor coordination",
+        "Coordination with other vendors for a seamless look"
+      ],
+      "price": "$3,000 - $7,000"
+    },
+    {
+      "id": "bride_grooming",
+      "cover_photo": "https://i.ibb.co/D9DvtfD/bride-grooming-cover.jpg",
+      "title": "Bride Grooming",
+      "short_description": "Get ready for your special day with our expert bride grooming services.",
+      "long_description": "Our Bride Grooming package is designed to pamper and prepare you for your big day. We provide a range of beauty and grooming services to ensure you look and feel your best as you walk down the aisle. Our team of skilled professionals will work with you to create the perfect bridal look that enhances your natural beauty.",
+      "services_list": [
+        "Bridal makeup consultation and application",
+        "Hairstyling and updos",
+        "Manicure and pedicure",
+        "Skin care and facial treatments",
+        "Eyebrow shaping and tinting",
+        "Lash extensions or false lashes",
+        "Body waxing and hair removal",
+        "Pre-wedding relaxation and spa packages",
+        "Customized bridal beauty regimen",
+        "Bridal dress and accessories consultation"
+      ],
+      "price": "$500 - $1,500"
+    },
+    {
+      "id": "food_catering",
+      "cover_photo": "https://i.ibb.co/brF6V6Y/catering-services-cover.jpg",
+      "title": "Food and Catering Services",
+      "short_description": "Delicious catering options tailored to your event.",
+      "long_description": "Our Food and Catering Services are designed to provide a culinary experience that complements your event perfectly. From mouthwatering appetizers to delectable main courses and delightful desserts, our expert culinary team will ensure that your guests are treated to a memorable dining experience.",
+      "services_list": [
+        "Custom menu planning",
+        "Appetizers and hors d'oeuvres",
+        "Buffet-style or plated meals",
+        "Dessert and cake selection",
+        "Beverage and bar services",
+        "Professional catering staff",
+        "Special dietary accommodations",
+        "Menu tastings and consultations",
+        "Tableware and presentation setup",
+        "Cleanup and waste removal"
+      ],
+      "price": "$50 - $150 per person"
+    },
+    {
+      "id": "kids_birthday_parties",
+      "cover_photo": "https://i.ibb.co/NnyKnjQ/kids-birthday-party-cover.jpg",
+      "title": "Kids' Birthday Parties",
+      "short_description": "Create unforgettable and fun-filled birthday parties for children.",
+      "long_description": "Our Kids' Birthday Parties service is designed to bring joy and excitement to your child's special day. We specialize in planning and coordinating themed birthday parties that cater to your child's interests and preferences. From selecting the perfect theme to arranging entertainment and activities, we take care of every detail to ensure a memorable celebration for your little one.",
+      "services_list": [
+        "Themed party planning and design",
+        "Venue selection and decoration",
+        "Entertainment coordination (clowns, magicians, characters, etc.)",
+        "Age-appropriate games and activities",
+        "Balloon art and face painting",
+        "Catering and custom cake design",
+        "Party favors and goody bags",
+        "Invitation design and RSVP management",
+        "Photography and videography options",
+        "Setup and cleanup services",
+        "Safety and supervision for kids"
+      ],
+      "price": "$500 - $1,500"
+    }
+  ]
+}
