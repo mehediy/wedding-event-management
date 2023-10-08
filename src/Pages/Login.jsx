@@ -1,6 +1,8 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { logIn } = useContext(AuthContext);
@@ -16,10 +18,12 @@ const Login = () => {
     logIn(email, password)
       .then((res) => {
         // console.log(res.user)
+        toast("Logged in successfully");
         navigate(location?.state ? location.state : "/");
       })
-      .catch((error) => console.error(error));
+      .catch((error) => toast.error(error.code));
   };
+
   return (
     <div className="container mx-auto">
       <div className="flex items-center flex-col gap-4 py-12">
@@ -34,6 +38,7 @@ const Login = () => {
               name="email"
               placeholder="example@gmail.com"
               className="input input-bordered w-full max-w-xs"
+              required
             />
             {/* <label className="label">
               <span className="label-text-alt">Bottom Left label</span>
@@ -48,12 +53,14 @@ const Login = () => {
               name="password"
               placeholder="Your password"
               className="input input-bordered w-full max-w-xs"
+              required
             />
             {/* <label className="label">
               <span className="label-text-alt">Bottom Left label</span>
             </label> */}
           </div>
           <div className="flex flex-col text-sm">
+            {/* {loginError && <span className="text-red-700">{loginError}</span>} */}
             <button type="submit" className="btn w-full my-2">
               Login
             </button>
