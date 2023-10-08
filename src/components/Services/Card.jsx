@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Card = ({ event_data }) => {
   const { id, title, cover_photo, short_description, price } = event_data;
   return (
@@ -13,7 +15,9 @@ const Card = ({ event_data }) => {
           <h2 className="card-title">{title}</h2>
           <p>{short_description}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Details</button>
+            <Link to={`${id}`}>
+              <button className="btn btn-primary">Details</button>
+            </Link>
           </div>
         </div>
       </div>
