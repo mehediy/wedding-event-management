@@ -3,6 +3,7 @@ import Slider from "../components/Header/Slider";
 import Cards from "../components/Services/Cards";
 import { useLoaderData } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   const { events_data } = useLoaderData();
@@ -13,6 +14,7 @@ const Home = () => {
         <Cards events_data={events_data} />
       </div>
       <Testimonials />
+      <Gallery />
     </div>
   );
 };
