@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [registerError, setRegisterError] = useState("");
+  const navigate = useNavigate();
 
   const registerHandler = (e) => {
     e.preventDefault();
@@ -28,7 +29,10 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then((res) => toast.success("Account created successfully"))
+      .then((res) => {
+        toast.success("Account created successfully");
+        navigate("/");
+      })
       .catch((error) => toast.error(error.code));
   };
   return (

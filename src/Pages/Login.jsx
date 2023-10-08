@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const { logIn } = useContext(AuthContext);
+  const { logIn, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -22,6 +22,14 @@ const Login = () => {
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => toast.error(error.code));
+  };
+  const googleLoginHandler = () => {
+    googleLogin()
+      .then((res) => {
+        toast("Successfully logged in");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => toast(error.code));
   };
 
   return (
@@ -64,6 +72,9 @@ const Login = () => {
             <button type="submit" className="btn w-full my-2">
               Login
             </button>
+            <a className="btn w-full my-2" onClick={googleLoginHandler}>
+              Login with Google
+            </a>
             <span className="text-center">
               <Link to={"/register"}>Don't have an account? Register!</Link>
             </span>
