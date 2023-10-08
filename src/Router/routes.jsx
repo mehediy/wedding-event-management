@@ -8,11 +8,13 @@ import Orders from "../Pages/Orders";
 import Register from "../Pages/Register";
 import ServiceDetails from "../components/Services/ServiceDetails";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
