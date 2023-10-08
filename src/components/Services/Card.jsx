@@ -12,7 +12,7 @@ const Card = ({ event_data }) => {
           <div className="bg-gray-100 p-1 px-2 rounded self-start">
             <span>Price: {price}</span>
           </div>
-          <h2 className="card-title">{title}</h2>
+          <h2 className="card-title text-primary">{title}</h2>
           <p>{short_description}</p>
           <div className="card-actions justify-start">
             <Link to={`${id}`}>

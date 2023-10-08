@@ -56,7 +56,10 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link to={"/"} className="btn btn-ghost normal-case text-xl">
+          <Link
+            to={"/"}
+            className="btn btn-ghost normal-case text-xl text-primary"
+          >
             Dream
           </Link>
         </div>

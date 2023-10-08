@@ -4,7 +4,7 @@ const Cards = ({ events_data }) => {
   return (
     <div>
       <div>
-        <h2 className="font-semibold text-3xl md:text-4xl text-center pb-8">
+        <h2 className="font-semibold text-3xl md:text-4xl text-center pb-8 text-primary">
           Our Services
         </h2>
       </div>
