@@ -1,13 +1,18 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
   const signOutHandler = () => {
     logOut()
-      .then((res) => console.log(res))
-      .catch((error) => console.error(error));
+      .then((res) => {
+        toast("Logged out");
+        navigate("/");
+      })
+      .catch((error) => toast(error.code));
   };
 
   const links = (
@@ -20,9 +25,6 @@ const Navbar = () => {
       </li>
       <li className="mx-2">
         <NavLink to={"/contact"}>Contact</NavLink>
-      </li>
-      <li className="mx-2">
-        <NavLink to={"/orders"}>Orders</NavLink>
       </li>
     </>
   );
@@ -65,7 +67,9 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? (
             <>
-              <span>{user?.displayName || "Your Name "}</span>
+              <span className="pr-2 hidden sm:block">
+                {user?.displayName || user.email}
+              </span>
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
@@ -82,7 +86,10 @@ const Navbar = () => {
                   className="mt-3 z-10 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a className="justify-between">Profile</a>
+                    <Link to={"/profile"}>Profile</Link>
+                  </li>
+                  <li>
+                    <Link to={"/orders"}>Orders</Link>
                   </li>
                   <li>
                     <a onClick={signOutHandler}>Logout</a>

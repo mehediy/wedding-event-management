@@ -6,32 +6,32 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Slider = () => {
   return (
     <div>
       <Swiper
-        slidesPerView={1}
         spaceBetween={30}
         effect={"fade"}
         loop={true}
-        autoplay={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative h-[700px]">
+          <div className="relative h-[400px] md:h-[700px]">
             <div className="absolute z-10 h-full w-full text-white flex items-center justify-center flex-col gap-6">
-              <h1 className="text-5xl max-w-3xl font-medium text-center leading-tight">
-                Capture the magic of your wedding day with professional
-                photography
+              <h1 className="text-3xl !leading-tight md:text-5xl px-4 max-w-3xl text-center ">
+                Cherish wedding magic with pro photography
               </h1>
-              <button className="btn">Contact</button>
             </div>
             <img
               className="brightness-[0.2]"
@@ -40,13 +40,11 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[700px]">
+          <div className="relative h-[400px] md:h-[700px]">
             <div className="absolute z-10 h-full w-full text-white flex items-center justify-center flex-col gap-6">
-              <h1 className="text-5xl max-w-3xl font-medium text-center leading-tight">
-                Get ready for your special day with our expert bride grooming
-                services
+              <h1 className="text-3xl md:text-5xl px-4 max-w-3xl text-center !leading-tight">
+                Embrace bridal beauty for your day.
               </h1>
-              <button className="btn">Contact</button>
             </div>
             <img
               className="brightness-[0.2]"
@@ -55,13 +53,11 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[700px]">
+          <div className="relative h-[400px] md:h-[700px]">
             <div className="absolute z-10 h-full w-full text-white flex items-center justify-center flex-col gap-6">
-              <h1 className="text-5xl max-w-3xl font-medium text-center leading-tight">
-                Create unforgettable and fun-filled birthday parties for
-                children
+              <h1 className="text-3xl md:text-5xl px-4 max-w-3xl text-center !leading-tight">
+                Craft joyful kids' birthday celebrations
               </h1>
-              <button className="btn">Contact</button>
             </div>
             <img
               className="brightness-[0.2]"
@@ -70,12 +66,11 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[700px]">
+          <div className="relative h-[400px] md:h-[700px]">
             <div className="absolute z-10 h-full w-full text-white flex items-center justify-center flex-col gap-6">
-              <h1 className="text-5xl max-w-3xl font-medium text-center leading-tight">
+              <h1 className="text-3xl md:text-5xl px-4 max-w-3xl text-center !leading-tight">
                 Delicious catering options tailored to your event
               </h1>
-              <button className="btn">Contact</button>
             </div>
             <img
               className="brightness-[0.2]"
