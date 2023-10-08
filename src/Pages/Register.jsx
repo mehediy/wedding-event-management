@@ -1,41 +1,41 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const [registerError, setRegisterError] = useState("");
 
   const registerHandler = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
 
-    const name = form.get("name");
     const email = form.get("email");
     const password = form.get("password");
 
+    setRegisterError("");
+
+    if (password.length < 6) {
+      setRegisterError("Password should be at least 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegisterError("Password should have at least 1 uppercase letter");
+      return;
+    } else if (!/[~!@#$%^^&*()_+]/.test(password)) {
+      setRegisterError("Password should have at least 1 special character");
+      return;
+    }
+
     createUser(email, password)
-      .then((res) => console.log(res.user))
-      .catch((error) => console.error(error));
+      .then((res) => toast.success("Account created successfully"))
+      .catch((error) => toast.error(error.code));
   };
   return (
     <div className="container mx-auto">
       <div className="flex items-center flex-col gap-4 py-12">
         <h2 className="font-bold text-xl">Create an account</h2>
         <form className="flex flex-col gap-2" onSubmit={registerHandler}>
-          <div className="form-control w-full max-w-xs">
-            <label className="label">
-              <span className="label-text">Full Name</span>
-            </label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              className="input input-bordered w-full max-w-xs"
-            />
-            {/* <label className="label">
-              <span className="label-text-alt">Bottom Left label</span>
-            </label> */}
-          </div>
           <div className="form-control w-full max-w-xs">
             <label className="label">
               <span className="label-text">Email</span>
@@ -45,6 +45,7 @@ const Register = () => {
               name="email"
               placeholder="example@gmail.com"
               className="input input-bordered w-full max-w-xs"
+              required
             />
             {/* <label className="label">
               <span className="label-text-alt">Bottom Left label</span>
@@ -59,12 +60,16 @@ const Register = () => {
               name="password"
               placeholder="Your password"
               className="input input-bordered w-full max-w-xs"
+              required
             />
             {/* <label className="label">
               <span className="label-text-alt">Bottom Left label</span>
             </label> */}
           </div>
           <div className="flex flex-col">
+            <span className="text-sm text-red-800 max-w-[16rem]">
+              {registerError}
+            </span>
             <button type="submit" className="btn w-full my-2">
               Register
             </button>
