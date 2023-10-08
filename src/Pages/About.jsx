@@ -101,7 +101,11 @@ const About = () => {
           <p className="text-gray-700 mt-4">
             Thank you for visiting us and learning more about Dream Wedding
             Planners. If you have any questions or would like to connect with
-            us, please don't hesitate to <Link to={"/contact"} />
+            us, please don't hesitate to{" "}
+            <Link className="text-blue-700" to={"/contact"}>
+              contact us
+            </Link>
+            .
           </p>
         </section>
       </div>
