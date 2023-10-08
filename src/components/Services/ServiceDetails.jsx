@@ -10,16 +10,14 @@ const ServiceDetails = () => {
     findData;
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4">
+    <div className="max-w-4xl mx-auto pt-2 pb-12 px-4">
       <div className="overflow-hidden rounded">
         <img className="w-full" src={cover_photo} />
       </div>
       <div className="flex flex-col gap-4">
         <div className="py-6">
           <h1 className="text-2xl md:text-4xl pb-2 font-bold">{title}</h1>
-          <p className="text-base md:text-lg text-justify">
-            {long_description}
-          </p>
+          <p className="text-base md:text-lg">{long_description}</p>
         </div>
         <div>
           <h2 className="text-xl md:text-3xl font-semibold pb-2">Features</h2>
