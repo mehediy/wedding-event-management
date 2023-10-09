@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-        <nav className="grid grid-flow-col gap-4">
+        <nav className="grid grid-flow-col gap-4 text-primary">
           <Link to={"/"} className="link link-hover">
             Home
           </Link>
@@ -16,7 +16,7 @@ const Footer = () => {
             Contact
           </Link>
         </nav>
-        <nav>
+        <nav className="text-primary">
           <div className="grid grid-flow-col gap-4">
             <a target="_blank" href="https://www.x.com/">
               <svg
@@ -54,7 +54,9 @@ const Footer = () => {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2023 - All right reserved by Dream Wedding Planner</p>
+          <p className="text-gray-600">
+            Copyright © 2023 - All right reserved by Dream Wedding Planner
+          </p>
         </aside>
       </footer>
     </>
