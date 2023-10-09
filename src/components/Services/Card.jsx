@@ -15,7 +15,7 @@ const Card = ({ event_data }) => {
           <h2 className="card-title text-primary">{title}</h2>
           <p>{short_description}</p>
           <div className="card-actions justify-start">
-            <Link to={`${id}`}>
+            <Link to={`/${id}`}>
               <button className="btn btn-primary">Details</button>
             </Link>
           </div>

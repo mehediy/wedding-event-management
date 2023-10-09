@@ -89,10 +89,10 @@ const Navbar = () => {
                   className="mt-3 z-10 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <Link to={"/profile"}>Profile</Link>
+                    <NavLink to={"/profile"}>Profile</NavLink>
                   </li>
                   <li>
-                    <Link to={"/orders"}>Orders</Link>
+                    <NavLink to={"/orders"}>Booking</NavLink>
                   </li>
                   <li>
                     <a onClick={signOutHandler}>Logout</a>
