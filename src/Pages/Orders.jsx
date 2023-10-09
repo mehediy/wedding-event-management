@@ -9,7 +9,7 @@ const Orders = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 pt-4 pb-12">
+    <div className="container mx-auto px-4 pt-4 pb-12 min-h-[80vh]">
       <h1 className="font-semibold text-3xl md:text-4xl text-center pb-8 text-primary">
         {bookedData ? "Your Booked Services" : "Try booking a service"}
       </h1>
