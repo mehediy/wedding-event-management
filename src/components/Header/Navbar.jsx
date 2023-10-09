@@ -10,6 +10,7 @@ const Navbar = () => {
     logOut()
       .then((res) => {
         toast("Logged out");
+        localStorage.clear("booking");
         navigate("/");
       })
       .catch((error) => toast(error.code));
