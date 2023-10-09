@@ -1,8 +1,14 @@
-# React + Vite
+# Dream Wedding Planners
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+At Dream Wedding Planners, we specialize in turning dreams into reality. Founded in 2018, we've been on a journey to create unforgettable wedding experiences ever since.
 
-Currently, two official plugins are available:
+Our Website: [https://event-management-f6dda.web.app](https://event-management-f6dda.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Some features of our website
+
+- Register and Login functionality.
+- Details about different services.
+- Book the service you need.
+- See the services you already booked.
+- Delete your account
+- Mobile Responsive
