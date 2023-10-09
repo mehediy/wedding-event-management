@@ -4,7 +4,7 @@ const Card = ({ event_data }) => {
   const { id, title, cover_photo, short_description, price } = event_data;
   return (
     <>
-      <div className="card bg-base-100 shadow-md">
+      <div data-aos="fade-up" className="card bg-base-100 shadow-md">
         <figure>
           <img src={cover_photo} />
         </figure>

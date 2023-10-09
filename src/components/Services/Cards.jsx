@@ -3,7 +3,7 @@ import Card from "./Card";
 const Cards = ({ events_data }) => {
   return (
     <div>
-      <div>
+      <div data-aos="fade-down">
         <h2 className="font-semibold text-3xl md:text-4xl text-center pb-8 text-primary">
           Our Services
         </h2>
