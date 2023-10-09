@@ -34,18 +34,20 @@ const Profile = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12 min-h-[80vh]">
       <div>
-        <h1 className="text-center text-xl font-semibold mb-4">User Profile</h1>
-        <div>
-          <div className="flex flex-col gap-2">
+        <h1 className="text-center text-3xl font-semibold mb-8">
+          User Profile
+        </h1>
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col gap-2 ">
             {/* Update profile */}
             <form
-              className="flex gap-2 items-start flex-col"
+              className="flex gap-2 items-center flex-col"
               onSubmit={updateHandler}
             >
               <div className="flex gap-2 items-center">
                 {(user.photoURL && (
                   <img
-                    className="h-full w-36 rounded-full"
+                    className="h-full w-36 rounded-full text-center"
                     src={user.photoURL}
                   />
                 )) || (
