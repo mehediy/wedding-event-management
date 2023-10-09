@@ -40,7 +40,7 @@ const Gallery = () => {
             >
               <img
                 src={image.imageUrl}
-                className="w-full h-auto scale-100 hover:scale-105 hover:transition-all hover:ease-in-out"
+                className="w-full h-auto scale-100 hover:scale-105 transition duration-300 ease-in-out"
               />
             </div>
           ))}

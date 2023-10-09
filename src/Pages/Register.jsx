@@ -48,7 +48,7 @@ const Register = () => {
               type="email"
               name="email"
               placeholder="example@gmail.com"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs focus:outline-none focus:border-primary"
               required
             />
             {/* <label className="label">
@@ -63,7 +63,7 @@ const Register = () => {
               type="password"
               name="password"
               placeholder="Your password"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs focus:outline-none focus:border-primary"
               required
             />
             {/* <label className="label">
@@ -74,7 +74,7 @@ const Register = () => {
             <span className="text-sm text-red-800 max-w-[16rem]">
               {registerError}
             </span>
-            <button type="submit" className="btn w-full my-2">
+            <button type="submit" className="btn btn-primary w-full my-2">
               Register
             </button>
             <span className="text-center text-sm">

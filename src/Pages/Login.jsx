@@ -45,7 +45,7 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="example@gmail.com"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs focus:outline-none focus:border-primary"
               required
             />
             {/* <label className="label">
@@ -60,7 +60,7 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Your password"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs focus:outline-none focus:border-primary"
               required
             />
             {/* <label className="label">
@@ -69,7 +69,7 @@ const Login = () => {
           </div>
           <div className="flex flex-col text-sm">
             {/* {loginError && <span className="text-red-700">{loginError}</span>} */}
-            <button type="submit" className="btn w-full my-2">
+            <button type="submit" className="btn w-full my-2 btn-primary">
               Login
             </button>
             <a className="btn w-full my-2" onClick={googleLoginHandler}>
