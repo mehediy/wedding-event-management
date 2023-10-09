@@ -20,11 +20,32 @@ const Profile = () => {
         <div>
           <p>Name: {user.displayName}</p>
           <p>Email: {user.email}</p>
-          <button onClick={deleteHandler} className="btn btn-warning mt-4">
+          <button
+            onClick={() => document.getElementById("deleteModal").showModal()}
+            className="btn btn-warning mt-4"
+          >
             Delete Account
           </button>
         </div>
       </div>
+
+      {/* Delete Confirmation Modal */}
+      <dialog id="deleteModal" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg text-center pb-6">Are you sure?</h3>
+          <div className="flex gap-4 justify-center">
+            <button className="btn btn-warning" onClick={deleteHandler}>
+              Delete
+            </button>
+            <form method="dialog">
+              <button className="btn">Cancel</button>
+            </form>
+          </div>
+        </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </div>
   );
 };
