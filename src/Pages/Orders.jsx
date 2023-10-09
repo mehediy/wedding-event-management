@@ -11,7 +11,7 @@ const Orders = () => {
   return (
     <div className="container mx-auto px-4 pt-4 pb-12">
       <h1 className="font-semibold text-3xl md:text-4xl text-center pb-8 text-primary">
-        Your Booked Services
+        {bookedData ? "Your Booked Services" : "Try booking a service"}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {bookedData?.map((item) => (
