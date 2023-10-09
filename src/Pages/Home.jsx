@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-16">
         <Cards events_data={events_data} />
       </div>
       <Testimonials />

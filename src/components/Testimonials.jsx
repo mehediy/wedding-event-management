@@ -37,7 +37,9 @@ const Testimonials = () => {
               className="bg-white p-6 rounded-lg shadow-md"
             >
               <p className="text-gray-700 mb-4">{testimonial.content}</p>
-              <div className="font-semibold">{testimonial.name}</div>
+              <div className="font-semibold text-primary">
+                {testimonial.name}
+              </div>
               <div className="text-gray-500">{testimonial.title}</div>
             </div>
           ))}

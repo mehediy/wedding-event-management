@@ -16,7 +16,9 @@ const ServiceDetails = () => {
       </div>
       <div className="flex flex-col gap-4">
         <div className="py-6">
-          <h1 className="text-2xl md:text-4xl pb-2 font-bold">{title}</h1>
+          <h1 className="text-2xl md:text-4xl pb-2 font-bold text-primary">
+            {title}
+          </h1>
           <p className="text-base md:text-lg">{long_description}</p>
         </div>
         <div>

@@ -34,10 +34,13 @@ const Gallery = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {galleryImages.map((image) => (
-            <div key={image.id}>
+            <div
+              className="overflow-hidden rounded-lg shadow-md"
+              key={image.id}
+            >
               <img
                 src={image.imageUrl}
-                className="w-full h-auto rounded-lg shadow-md"
+                className="w-full h-auto scale-100 hover:scale-105 hover:transition-all hover:ease-in-out"
               />
             </div>
           ))}
